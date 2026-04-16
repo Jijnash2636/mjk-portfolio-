@@ -100,7 +100,7 @@ const HeroSection = () => {
                   <FileText className="w-4 h-4" />
                   Resume
                 </a>
-                <a href="mailto:jijnashkumar@gmail.com" className="inline-flex items-center gap-2 px-6 py-3 bg-green-50 border border-green-100 rounded-full text-sm font-medium text-green-600 hover:bg-green-100 transition-colors">
+                <a href="#contact" className="inline-flex items-center gap-2 px-6 py-3 bg-green-50 border border-green-100 rounded-full text-sm font-medium text-green-600 hover:bg-green-100 transition-colors">
                   <Mail className="w-4 h-4" />
                   Contact
                 </a>
