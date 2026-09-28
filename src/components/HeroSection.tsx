@@ -2,15 +2,16 @@ import { useEffect, useState } from "react";
 import { Github, Linkedin, ExternalLink, FileText, Mail } from "lucide-react";
 
 const stats = [
-  { value: "5+", label: "AI Projects" },
-  { value: "9.48", label: "CGPA" },
+  { value: "9.52/10", label: "CGPA" },
+  { value: "3", label: "AI Internships" },
   { value: "Top 6", label: "National Rank" },
-  { value: "4", label: "Core Research Areas" },
+  { value: "5", label: "Research Areas" },
 ];
 
 const typingTexts = [
-  "AI Research Engineer",
-  "Biomedical AI Systems",
+  "Multimodal AI",
+  "Generative AI",
+  "Intelligent Systems",
 ];
 
 const HeroSection = () => {
@@ -67,17 +68,18 @@ const HeroSection = () => {
                   <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse-glow" />
                   Available for Research
                 </div>
-                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-gray-900 whitespace-nowrap overflow-hidden pb-2">
+                <p className="mono text-sm font-medium text-gray-500">Jijnash Kumar Mukka</p>
+                <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold tracking-tight text-gray-900">
+                  AI/ML Engineer & Researcher
+                </h1>
+                <p className="text-lg sm:text-xl md:text-2xl text-blue-600 font-light min-h-[1.5em]">
                   {displayText}
                   <span className="typing-cursor text-gray-400 ml-1">|</span>
-                </h1>
-                <p className="text-lg sm:text-xl md:text-2xl text-gray-500 font-light whitespace-nowrap">
-                  Mukka Jijnash Kumar
                 </p>
               </div>
 
               <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-lg">
-                Building AI systems at the intersection of healthcare diagnostics and intelligent systems, with a focus on multimodal AI for early disease detection.
+                Building practical intelligent systems across multimodal AI, healthcare, generative AI, and intelligent optimization.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -124,9 +126,9 @@ const HeroSection = () => {
               <div className="flex items-center gap-3">
                 <span className="text-xs text-gray-400 mono">Experience with</span>
                 <div className="flex items-center gap-3 text-sm font-medium text-gray-600">
-                  <span className="px-3 py-1 rounded-lg bg-blue-50 text-blue-600">IIIT Nagpur</span>
+                  <span className="px-3 py-1 rounded-lg bg-blue-50 text-blue-600">NIT Calicut</span>
                   <span className="px-3 py-1 rounded-lg bg-green-50 text-green-600">IIT Jammu</span>
-                  <span className="px-3 py-1 rounded-lg bg-blue-50 text-blue-600">Google Cloud</span>
+                  <span className="px-3 py-1 rounded-lg bg-blue-50 text-blue-600">IIIT Nagpur</span>
                 </div>
               </div>
 

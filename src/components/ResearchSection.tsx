@@ -11,7 +11,7 @@ const ResearchSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="research" className="py-12 px-4">
+    <section id="research-publications" className="py-12 px-4 scroll-mt-16 md:scroll-mt-14">
       <div ref={ref} className={`max-w-6xl mx-auto transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
         <div className="bg-white rounded-3xl p-8 md:p-12 border border-gray-100 shadow-soft">
           <span className="mono text-xs text-blue-500 uppercase tracking-widest font-medium">Publications & Research</span>
