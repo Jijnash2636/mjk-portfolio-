@@ -96,7 +96,7 @@ const HeroSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </a>
-                <a href="/F_Resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-blue-50 border border-blue-100 rounded-full text-sm font-medium text-blue-600 hover:bg-blue-100 transition-colors">
+                <a href="/Resume_Jijnash.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-blue-50 border border-blue-100 rounded-full text-sm font-medium text-blue-600 hover:bg-blue-100 transition-colors">
                   <FileText className="w-4 h-4" />
                   Resume
                 </a>
