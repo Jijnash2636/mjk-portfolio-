@@ -117,14 +117,10 @@ const ProjectsSection = () => {
           {projects.map((p, i) => (
             <div
               key={p.title}
-              className={`group transition-all duration-500 ${expandedIdx === i ? 'md:col-span-2' : ''}`}
+              className={`group cursor-pointer transition-all duration-500 ${expandedIdx === i ? 'md:col-span-2' : ''}`}
+              onClick={() => setExpandedIdx(expandedIdx === i ? null : i)}
             >
-              <button
-                type="button"
-                onClick={() => setExpandedIdx(expandedIdx === i ? null : i)}
-                className={`w-full text-left bg-gradient-to-br ${p.accent} rounded-3xl p-6 md:p-8 h-full border ${p.border} hover:shadow-lg transition-all duration-300 card-hover`}
-                aria-expanded={expandedIdx === i}
-              >
+              <div className={`bg-gradient-to-br ${p.accent} rounded-3xl p-6 md:p-8 h-full border ${p.border} hover:shadow-lg transition-all duration-300 card-hover`}>
                 <div className="flex items-start justify-between mb-5">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center flex-shrink-0">
@@ -143,59 +139,59 @@ const ProjectsSection = () => {
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {p.tags.map((tag) => (
                     <span key={tag} className="px-3 py-1 rounded-full bg-white/80 text-xs font-medium text-gray-600 mono shadow-sm">
                       {tag}
                     </span>
                   ))}
                 </div>
-              </button>
 
-              {expandedIdx === i && (
-                <div className={`mt-3 bg-gradient-to-br ${p.accent} rounded-3xl p-6 md:p-8 border ${p.border} animate-fade-in-up`}>
-                  <div className="grid md:grid-cols-3 gap-5">
-                    <div className="p-4 rounded-xl bg-white/80 backdrop-blur-sm">
-                      <h4 className="mono text-xs text-blue-600 font-semibold uppercase tracking-wider mb-2">Problem</h4>
-                      <p className="text-sm text-gray-700">{p.problem}</p>
+                {expandedIdx === i && (
+                  <div className="mt-6 pt-6 border-t border-gray-200/50 space-y-5 animate-fade-in-up">
+                    <div className="grid md:grid-cols-3 gap-5">
+                      <div className="p-4 rounded-xl bg-white/80 backdrop-blur-sm">
+                        <h4 className="mono text-xs text-blue-600 font-semibold uppercase tracking-wider mb-2">Problem</h4>
+                        <p className="text-sm text-gray-700">{p.problem}</p>
+                      </div>
+                      <div className="p-4 rounded-xl bg-white/80 backdrop-blur-sm">
+                        <h4 className="mono text-xs text-green-600 font-semibold uppercase tracking-wider mb-2">Solution</h4>
+                        <p className="text-sm text-gray-700">{p.solution}</p>
+                      </div>
+                      <div className="p-4 rounded-xl bg-white/80 backdrop-blur-sm">
+                        <h4 className="mono text-xs text-purple-600 font-semibold uppercase tracking-wider mb-2">Result</h4>
+                        <p className="text-sm text-gray-700">{p.result}</p>
+                      </div>
                     </div>
-                    <div className="p-4 rounded-xl bg-white/80 backdrop-blur-sm">
-                      <h4 className="mono text-xs text-green-600 font-semibold uppercase tracking-wider mb-2">Approach</h4>
-                      <p className="text-sm text-gray-700">{p.solution}</p>
-                    </div>
-                    <div className="p-4 rounded-xl bg-white/80 backdrop-blur-sm">
-                      <h4 className="mono text-xs text-purple-600 font-semibold uppercase tracking-wider mb-2">Outcome</h4>
-                      <p className="text-sm text-gray-700">{p.result}</p>
-                    </div>
-                  </div>
 
-                  <div className="flex flex-wrap gap-2 mt-5">
-                    {p.tech.map((t) => (
-                      <span key={t} className="px-3 py-1.5 rounded-lg bg-white/60 text-xs font-medium text-gray-600 mono shadow-sm">
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-
-                  {p.links.length > 0 && (
-                    <div className="flex flex-wrap gap-3 mt-5">
-                      {p.links.map((l) => (
-                        <a
-                          key={l.href}
-                          href={l.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          onClick={(e) => e.stopPropagation()}
-                          className="inline-flex items-center gap-2 px-4 py-2.5 bg-gray-900 text-white rounded-xl text-xs font-medium hover:bg-gray-800 transition-colors shadow-sm"
-                        >
-                          <l.icon className="w-3 h-3" />
-                          {l.label}
-                        </a>
+                    <div className="flex flex-wrap gap-2">
+                      {p.tech.map((t) => (
+                        <span key={t} className="px-3 py-1.5 rounded-lg bg-white/60 text-xs font-medium text-gray-600 mono shadow-sm">
+                          {t}
+                        </span>
                       ))}
                     </div>
-                  )}
-                </div>
-              )}
+
+                    {p.links.length > 0 && (
+                      <div className="flex flex-wrap gap-3">
+                        {p.links.map((l) => (
+                          <a
+                            key={l.href}
+                            href={l.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="inline-flex items-center gap-2 px-4 py-2.5 bg-gray-900 text-white rounded-xl text-xs font-medium hover:bg-gray-800 transition-colors shadow-sm"
+                          >
+                            <l.icon className="w-3 h-3" />
+                            {l.label}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>
