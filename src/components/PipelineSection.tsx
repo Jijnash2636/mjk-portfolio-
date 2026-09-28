@@ -66,7 +66,7 @@ const PipelineSection = () => {
               {pipeline.map((step, i) => (
                 <div key={step.num} className="flex items-center gap-2">
                   <span className="px-2.5 py-1.5 rounded-lg bg-white border border-gray-100 text-xs font-medium text-gray-600 mono">
-                    {step.label.charAt(0) + step.label.slice(1).toLowerCase()}
+                    {step.label}
                   </span>
                   {i < pipeline.length - 1 && <span className="text-gray-300 text-xs">&rarr;</span>}
                 </div>

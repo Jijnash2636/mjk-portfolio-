@@ -143,7 +143,7 @@ const ContactSection = () => {
         </div>
 
         <div className="mt-6 text-center text-xs text-gray-400 mono">
-          © <span id="year">{new Date().getFullYear()}</span> Mukka Jijnash Kumar · Actively seeking research collaborations & graduate opportunities
+          © <span id="year">{new Date().getFullYear()}</span> Jijnash Kumar Mukka · Actively seeking research collaborations & graduate opportunities
         </div>
       </div>
     </section>
