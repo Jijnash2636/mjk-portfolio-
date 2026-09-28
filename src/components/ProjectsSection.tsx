@@ -4,20 +4,6 @@ import { BarChart3, Microscope, Brain, Zap, Building2, ArrowUpRight, Github, Ext
 
 const projects = [
   {
-    icon: Microscope,
-    title: "Parkinson's Disease Detection",
-    subtitle: "Non-invasive multimodal biomarker analysis",
-    year: "2026",
-    tags: ["Biomedical AI", "Research — IIIT Nagpur"],
-    problem: "Early Parkinson's diagnosis relies heavily on costly imaging and specialist access, which limits how early it can be detected.",
-    solution: "Non-invasive detection combining voice, facial, and motor biomarkers — MFCC, pitch, jitter, shimmer and HNR from audio, facial landmarks via MediaPipe, and movement analysis with DeepLabCut.",
-    result: "Confidence-weighted late fusion across the three modalities, with each modality evaluated against the combined system.",
-    tech: ["Python", "librosa", "Parselmouth", "MediaPipe", "DeepLabCut", "Multimodal ML"],
-    links: [],
-    accent: "from-purple-50 to-pink-50",
-    border: "border-purple-100",
-  },
-  {
     icon: Brain,
     title: "MedDocAssist",
     subtitle: "Multimodal clinical NLP framework",
@@ -58,6 +44,20 @@ const projects = [
     links: [{ href: "https://github.com/Jijnash2636/SmartaTon_top6_project_Dhanalaxmi-UNV", label: "View Code", icon: Github }],
     accent: "from-amber-50 to-orange-50",
     border: "border-amber-100",
+  },
+  {
+    icon: Microscope,
+    title: "Parkinson's Disease Detection",
+    subtitle: "Non-invasive multimodal biomarker analysis",
+    year: "2026",
+    tags: ["Biomedical AI", "Research — IIIT Nagpur"],
+    problem: "Early Parkinson's diagnosis relies heavily on costly imaging and specialist access, which limits how early it can be detected.",
+    solution: "Non-invasive detection combining voice, facial, and motor biomarkers — MFCC, pitch, jitter, shimmer and HNR from audio, facial landmarks via MediaPipe, and movement analysis with DeepLabCut.",
+    result: "Confidence-weighted late fusion across the three modalities, with each modality evaluated against the combined system.",
+    tech: ["Python", "librosa", "Parselmouth", "MediaPipe", "DeepLabCut", "Multimodal ML"],
+    links: [],
+    accent: "from-purple-50 to-pink-50",
+    border: "border-purple-100",
   },
   {
     icon: Building2,
