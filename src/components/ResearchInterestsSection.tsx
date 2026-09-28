@@ -2,11 +2,11 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Brain, HeartPulse, Sparkles, Network, Server } from "lucide-react";
 
 const areas = [
-  { icon: Brain, num: "01", title: "Multimodal AI", desc: "Combining voice, facial, and motor signals to develop robust intelligent systems.", tags: ["Voice Biomarkers", "Computer Vision", "Feature Fusion", "Multimodal Learning"] },
-  { icon: HeartPulse, num: "02", title: "Healthcare AI & Clinical NLP", desc: "Developing AI systems for biomedical diagnostics, clinical documentation, medical information extraction, and decision-support workflows.", tags: ["Biomedical AI", "Clinical NLP", "Medical Data", "Diagnostic Systems"] },
-  { icon: Sparkles, num: "03", title: "Generative AI & AI Agents", desc: "Building LLM-powered applications and agentic workflows for reasoning, automation, structured analysis, and intelligent assistance.", tags: ["LLMs", "Generative AI", "AI Agents", "Prompt Engineering"] },
-  { icon: Network, num: "04", title: "Intelligent Systems & Reinforcement Learning", desc: "Exploring adaptive decision-making and optimization for real-world systems such as urban traffic management.", tags: ["Reinforcement Learning", "Multi-Agent Systems", "Traffic Simulation", "Optimization"] },
-  { icon: Server, num: "05", title: "ML Systems & Deployment", desc: "Turning machine learning models into usable services through validation, APIs, model serving, and cloud infrastructure.", tags: ["FastAPI", "REST APIs", "Model Deployment", "Google Cloud", "Vertex AI"] },
+  { icon: Brain, num: "01", title: "Applied AI & Machine Learning", desc: "Building practical ML systems for real-world problems.", tags: ["Machine Learning", "Feature Engineering", "Model Evaluation", "Data-Driven Applications"] },
+  { icon: Sparkles, num: "02", title: "Generative AI & AI Agents", desc: "Building LLM-powered applications and agentic workflows for reasoning, automation, structured analysis, and intelligent assistance.", tags: ["LLMs", "Generative AI", "AI Agents", "Prompt Engineering"] },
+  { icon: Server, num: "03", title: "ML Systems & Deployment", desc: "Turning machine learning models into usable services through validation, APIs, model serving, and cloud infrastructure.", tags: ["FastAPI", "REST APIs", "Model Deployment", "Google Cloud", "Vertex AI"] },
+  { icon: HeartPulse, num: "04", title: "Healthcare AI & Clinical NLP", desc: "Applying AI to healthcare data, clinical documentation, and decision-support applications.", tags: ["Healthcare AI", "Clinical NLP", "Medical Data", "Decision Support"] },
+  { icon: Network, num: "05", title: "Intelligent Systems & Optimization", desc: "Applying machine learning and reinforcement learning to dynamic systems such as urban traffic management.", tags: ["Reinforcement Learning", "Multi-Agent Systems", "Traffic Optimization", "Dynamic Systems"] },
 ];
 
 const ResearchInterestsSection = () => {
@@ -19,7 +19,7 @@ const ResearchInterestsSection = () => {
           <span className="mono text-xs text-blue-500 uppercase tracking-widest font-medium">What I Work On</span>
           <div className="flex items-end justify-between gap-4 mt-2 mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
-              Research Areas
+              Areas of Focus
             </h2>
             <a href="#research-publications" className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-medium text-blue-600 hover:text-blue-700 hover:bg-blue-50 transition-colors whitespace-nowrap">
               View publications →

@@ -8,7 +8,7 @@ const experiences = [
     period: "May 2026 – July 2026",
     context: "Summer Internship Programme (SIP) 2026",
     highlights: [
-      "Researched risk-adaptive multi-agent traffic signal optimization for urban accident blackspot prevention",
+      "Built and evaluated an intelligent traffic-signal optimization approach using reinforcement learning and multi-agent systems, with a focus on accident-risk-aware decision making",
       "Surveyed accident-risk prediction, adaptive signal optimization, traffic conflict detection, and safety-aware intelligent transportation systems",
       "Conducted comparative analysis of existing methods and identified research gaps",
       "Supported technical direction, project review, and evaluation",

@@ -18,12 +18,12 @@ const Index = () => (
     <Navbar />
     <HeroSection />
     <AboutSection />
-    <ResearchInterestsSection />
+    <FeaturedProject />
     <SkillsSection />
     <ExperienceSection />
-    <FeaturedProject />
     <ProjectsSection />
     <PipelineSection />
+    <ResearchInterestsSection />
     <ResearchSection />
     <AchievementsSection />
     <ContactSection />
@@ -33,10 +33,10 @@ const Index = () => (
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
             <p className="font-semibold text-gray-900">Jijnash Kumar Mukka</p>
-            <p className="text-sm text-gray-500 mono">AI/ML Engineer &amp; Researcher</p>
+            <p className="text-sm text-gray-500 mono">AI/ML Engineer</p>
           </div>
           <p className="text-xs text-gray-400 mono text-left sm:text-right">
-            © 2026 Jijnash Kumar Mukka · Open to research collaborations, internships &amp; graduate opportunities
+            © 2026 Jijnash Kumar Mukka · Open to AI/ML internships &amp; graduate opportunities
           </p>
         </div>
       </div>

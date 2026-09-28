@@ -5,53 +5,15 @@ const stats = [
   { value: "9.52/10", label: "CGPA" },
   { value: "3", label: "AI Internships" },
   { value: "Top 6", label: "National Rank" },
-  { value: "5", label: "Research Areas" },
-];
-
-const typingTexts = [
-  "Multimodal AI",
-  "Generative AI",
-  "Intelligent Systems",
+  { value: "5", label: "Areas of Focus" },
 ];
 
 const HeroSection = () => {
-  const [displayText, setDisplayText] = useState("");
-  const [textIndex, setTextIndex] = useState(0);
-  const [charIndex, setCharIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
     setShowContent(true);
   }, []);
-
-  useEffect(() => {
-    const currentText = typingTexts[textIndex];
-    const typingSpeed = isDeleting ? 50 : 100;
-    const pauseTime = 2000;
-
-    const timeout = setTimeout(() => {
-      if (!isDeleting) {
-        setDisplayText(currentText.substring(0, charIndex + 1));
-        setCharIndex(charIndex + 1);
-
-        if (charIndex + 1 === currentText.length) {
-          setTimeout(() => setIsDeleting(true), pauseTime);
-          return;
-        }
-      } else {
-        setDisplayText(currentText.substring(0, charIndex - 1));
-        setCharIndex(charIndex - 1);
-
-        if (charIndex - 1 === 0) {
-          setIsDeleting(false);
-          setTextIndex((textIndex + 1) % typingTexts.length);
-        }
-      }
-    }, typingSpeed);
-
-    return () => clearTimeout(timeout);
-  }, [charIndex, isDeleting, textIndex]);
 
   return (
     <section id="hero" className="pb-12 px-4 relative overflow-hidden">
@@ -66,20 +28,19 @@ const HeroSection = () => {
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-sm font-medium text-blue-600">
                   <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse-glow" />
-                  Available for Research
+                  Open to AI/ML Internships
                 </div>
                 <p className="mono text-sm font-medium text-gray-500">Jijnash Kumar Mukka</p>
                 <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold tracking-tight text-gray-900">
-                  AI/ML Engineer & Researcher
+                  AI/ML Engineer
                 </h1>
-                <p className="text-lg sm:text-xl md:text-2xl text-blue-600 font-light min-h-[1.5em]">
-                  {displayText}
-                  <span className="typing-cursor text-gray-400 ml-1">|</span>
+                <p className="text-lg sm:text-xl md:text-2xl text-blue-600 font-light">
+                  Applied AI · Generative AI · Intelligent Systems
                 </p>
               </div>
 
               <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-lg">
-                Building practical intelligent systems across multimodal AI, healthcare, generative AI, and intelligent optimization.
+                Building practical intelligent systems that connect machine learning, software engineering, and real-world applications.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

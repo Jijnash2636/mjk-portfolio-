@@ -14,16 +14,16 @@ const AboutSection = () => {
 
           <div className="mt-10 max-w-3xl">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-              Building AI systems that connect research with real-world applications.
+              I build AI systems — from ideas, data, and models to working applications.
             </h2>
           </div>
 
           <div className="mt-6 max-w-3xl space-y-4">
             <p className="text-gray-600 leading-relaxed">
-              I am an undergraduate AI &amp; Machine Learning engineer and researcher at SRM Institute of Science and Technology, focused on building practical intelligent systems across multimodal AI, healthcare, generative AI, and intelligent optimization.
+              I am an undergraduate AI &amp; Machine Learning engineer focused on building practical intelligent systems across AI, healthcare, generative AI, and data-driven applications.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              My work spans multimodal disease detection, clinical NLP, AI agents, reinforcement-learning-based optimization, and deployable machine learning systems. I enjoy taking an idea from data and experimentation through model development and system integration to a usable application.
+              My experience spans machine learning, multimodal AI, clinical NLP, generative AI, AI agents, backend APIs, and cloud-based deployment. I enjoy turning ideas into working systems — from data processing and model development to API integration, deployment, and user-facing applications.
             </p>
           </div>
 
@@ -47,10 +47,22 @@ const AboutSection = () => {
                 <Target className="w-5 h-5 text-green-500" />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-2">My Differentiator</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">What I Bring</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  I combine <span className="text-gray-900 font-medium">research-oriented machine learning with practical system development</span>. Rather than focusing only on model training, I work across the complete pipeline — data processing, feature engineering, model development, evaluation, APIs, cloud deployment, and application-level integration.
+                  I combine machine learning knowledge with practical software development. I build systems that connect data, models, APIs, and applications — taking projects beyond experimentation toward usable solutions.
                 </p>
+                <div className="mt-4 grid sm:grid-cols-3 gap-3">
+                  {[
+                    { k: "Build", v: "ML models and intelligent applications" },
+                    { k: "Integrate", v: "APIs, LLMs, databases, and cloud services" },
+                    { k: "Deploy", v: "Turn models into usable systems" },
+                  ].map((item) => (
+                    <div key={item.k} className="p-3 rounded-xl bg-gray-50 border border-gray-100">
+                      <span className="mono text-xs font-semibold text-blue-600 uppercase tracking-wider">{item.k}</span>
+                      <p className="text-sm text-gray-600 mt-1">{item.v}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
