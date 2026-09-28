@@ -1,10 +1,51 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { BookOpen, FlaskConical, Microscope, Building2, Calendar } from "lucide-react";
+import { BookOpen, FlaskConical, Microscope, Brain, Building2, Calendar } from "lucide-react";
 
 const items = [
-  { icon: BookOpen, title: "Book Chapter Publication", institution: "The Dawn Publishers", year: "2024", status: "Published", statusBg: "bg-green-100", statusText: "text-green-700", desc: "Contributed a chapter on AI applications in healthcare diagnostics and clinical decision systems.", contribution: "Chapter on AI-driven diagnostic systems for resource-limited environments" },
-  { icon: FlaskConical, title: "EcoSignal-CP Research Paper", institution: "Environmental AI Research", year: "2024 – 2025", status: "In Progress", statusBg: "bg-amber-100", statusText: "text-amber-700", desc: "Carbon Pressure Control for Urban CO₂ Emission Stabilization using SUMO simulation and ML.", contribution: "Novel approach combining traffic simulation with predictive ML for emission control" },
-  { icon: Microscope, title: "Multimodal Parkinson's Detection", institution: "IIIT Nagpur", year: "2025 – 2026", status: "Research", statusBg: "bg-blue-100", statusText: "text-blue-700", desc: "Feature fusion research combining voice, facial, and motor biomarkers for non-invasive detection.", contribution: "Non-invasive early detection pipeline using three distinct data modalities" },
+  {
+    icon: BookOpen,
+    title: "Nature-based Solutions for Improving Human Well-being",
+    institution: "The Dawn Publishers · Green Horizons",
+    year: "10 April 2024",
+    status: "Published",
+    statusBg: "bg-green-100",
+    statusText: "text-green-700",
+    desc: "Book chapter in \"Green Horizons: Nurturing Our Planet's Ecological Legacy\" · ISBN 978-81-946418-6-5.",
+    contribution: "Chapter contributor",
+  },
+  {
+    icon: FlaskConical,
+    title: "EcoSignal-CP",
+    institution: "ICRISET 2026 · Chennai",
+    year: "August 2026",
+    status: "Presented",
+    statusBg: "bg-blue-100",
+    statusText: "text-blue-700",
+    desc: "Carbon Pressure Control for Urban CO₂ Emission Waveform Stabilization. Also submitted to IEEE ITSC 2026. Research combining traffic simulation, vehicle-level profiling, and predictive optimization for urban carbon-emission control.",
+    contribution: "Carbon Pressure formulation with per-vehicle ANPR profiling across SUMO simulation",
+  },
+  {
+    icon: Microscope,
+    title: "Multimodal Parkinson's Disease Detection",
+    institution: "IIIT Nagpur",
+    year: "2025 – 2026",
+    status: "Research",
+    statusBg: "bg-purple-100",
+    statusText: "text-purple-700",
+    desc: "Non-invasive detection research combining voice, facial, and motor biomarkers.",
+    contribution: "Confidence-weighted late fusion, with each modality evaluated against the combined system",
+  },
+  {
+    icon: Brain,
+    title: "MedDocAssist",
+    institution: "Multimodal Clinical NLP Research",
+    year: "2026",
+    status: "Ongoing",
+    statusBg: "bg-amber-100",
+    statusText: "text-amber-700",
+    desc: "Multimodal clinical NLP framework for NER, ICD-10 coding, summarization, and drug-interaction detection.",
+    contribution: "BioBERT, Flan-T5, and PubMedBERT pipeline with PHI de-identification and human-in-the-loop validation",
+  },
 ];
 
 const ResearchSection = () => {
